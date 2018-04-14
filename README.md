@@ -1,5 +1,5 @@
 # Development of converter and controller for permanent magnet brushless DC Motor drive for air conditioning application
-#### Mentor - Prof. Kalpana Choudhary
+#### Mentor - [Dr. Kalpana Choudhary](http://www.iitbhu.ac.in/dept/eee/people/kchaudharyeee)
 
 Student                  | IIT(BHU) Roll Number
 -------------------------|---------------------
