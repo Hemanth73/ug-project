@@ -1,12 +1,12 @@
 Model {
   Name			  "ug"
-  Version		  8.9
-  SavedCharacterEncoding  "windows-1252"
+  Version		  9.0
+  SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.22"
+    ComputedModelVersion    "1.23"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -16,13 +16,183 @@ Model {
     HasTerminateEvent	    0
     IsExportFunctionModel   0
     NumParameterArguments   0
+    NumExternalFileReferences 28
+    ExternalFileReference {
+      Reference		      "powerlib/Elements/Series RLC Branch"
+      Path		      "ug/C1"
+      SID		      "347"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Elements/Series RLC Branch"
+      Path		      "ug/Cd"
+      SID		      "348"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Continuous/PID Controller"
+      Path		      "ug/Controller/PI Controller"
+      SID		      "403"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib_meascontrol/Pulse & Signal\nGenerators/PWM Generator\n(2-Level)"
+      Path		      "ug/Controller/PWM Generator (2-Level)"
+      SID		      "412"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Current Measurement"
+      Path		      "ug/Current Measurement"
+      SID		      "435"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Current Measurement"
+      Path		      "ug/Current Measurement1"
+      SID		      "484"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Power\nElectronics/Diode"
+      Path		      "ug/D"
+      SID		      "350"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Multimeter"
+      Path		      "ug/IL1"
+      SID		      "418"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Elements/Series RLC Branch"
+      Path		      "ug/L1"
+      SID		      "357"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Elements/Series RLC Branch"
+      Path		      "ug/L2"
+      SID		      "358"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Multimeter"
+      Path		      "ug/Multimeter"
+      SID		      "361"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Multimeter"
+      Path		      "ug/Multimeter1"
+      SID		      "362"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "ug/PMBLDCM/Gates/Compare To Zero"
+      SID		      "279"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "ug/PMBLDCM/Gates/Compare To Zero1"
+      SID		      "280"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "ug/PMBLDCM/Gates/Compare To Zero2"
+      SID		      "281"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "ug/PMBLDCM/Gates/Compare To Zero3"
+      SID		      "282"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "ug/PMBLDCM/Gates/Compare To Zero4"
+      SID		      "283"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "ug/PMBLDCM/Gates/Compare To Zero5"
+      SID		      "284"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Machines/Permanent Magnet\nSynchronous Machine"
+      Path		      "ug/PMBLDCM/Permanent Magnet Synchronous Machine"
+      SID		      "291"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Power\nElectronics/Universal Bridge"
+      Path		      "ug/PMBLDCM/Universal Bridge1"
+      SID		      "294"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Voltage Measurement"
+      Path		      "ug/PMBLDCM/Voltage Measurement2"
+      SID		      "297"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Power\nElectronics/Mosfet"
+      Path		      "ug/S"
+      SID		      "360"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Power\nElectronics/Universal Bridge"
+      Path		      "ug/Universal Bridge"
+      SID		      "399"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Multimeter"
+      Path		      "ug/Vout"
+      SID		      "419"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Electrical\nSources/AC Voltage Source"
+      Path		      "ug/Vs"
+      SID		      "394"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Multimeter"
+      Path		      "ug/Vs val"
+      SID		      "450"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/Measurements/Multimeter"
+      Path		      "ug/Vsource"
+      SID		      "440"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "powerlib/powergui"
+      Path		      "ug/powergui"
+      SID		      "23"
+      Type		      "LIBRARY_BLOCK"
+    }
     OrderedModelArguments   1
   }
   LogicAnalyzerGraphicalSettings ""
   LogicAnalyzerPlugin	  "on"
   LogicAnalyzerSignalOrdering ""
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 8 0"
+  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 11 0"
+  CustomCodeFunctionData  ""
   SLCCPlugin		  "on"
   slprops.hdlmdlprops {
     $PropName		    "HDLParams"
@@ -45,7 +215,7 @@ Model {
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
   UserBdParams		  "PhysicalModelingChecksum;PhysicalModelingParameterChecksum;PhysicalModelingProducts"
-  LastSavedArchitecture	  "win64"
+  LastSavedArchitecture	  "glnxa64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    2
@@ -55,7 +225,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-8.0, -8.0, 1382.0, 744.0]
+      Location		      [0.0, 23.0, 1366.0, 705.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -77,11 +247,11 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1328.0, 563.0]
-	ZoomFactor		[0.85526315789473684]
-	Offset			[-651.36923076923074, 524.36153846153843]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"316"
+	Extents			[1328.0, 573.0]
+	ZoomFactor		[1.73]
+	Offset			[835.95459266618479, 138.60404624277459]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -99,13 +269,13 @@ Model {
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABKAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAVWAAACbAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKAD///8AAAVWAAACdAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAMr/////wAAAAAAAAAA/"
-      "////wEAAANa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAAB2/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFQ/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAMe/////wAAAAAAAAAA/"
+      "////wEAAANL/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -116,12 +286,11 @@ Model {
   Creator		  "tsukuyomi"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "HemanthSai"
+  LastModifiedBy	  "15085073"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Sep 03 00:24:43 2018"
-  RTWModifiedTimeStamp	  457834652
-  ModelVersionFormat	  "1.%<AutoIncrement:22>"
-  ConfigurationManager	  "none"
+  LastModifiedDate	  "Mon Sep 03 01:07:38 2018"
+  RTWModifiedTimeStamp	  457837482
+  ModelVersionFormat	  "1.%<AutoIncrement:23>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -149,6 +318,7 @@ Model {
   BlockNameDataTip	  off
   BlockParametersDataTip  off
   BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
   ToolBar		  on
   StatusBar		  on
   BrowserShowLibraryLinks off
@@ -216,7 +386,7 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      9
-      Version		      "1.17.0"
+      Version		      "1.17.1"
       DisabledProps	      []
       Description	      ""
       Array {
@@ -224,7 +394,7 @@ Model {
 	Dimension		11
 	Simulink.SolverCC {
 	  $ObjectID		  10
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
@@ -232,7 +402,6 @@ Model {
 	  AbsTol		  "auto"
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
-	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
 	  ConsecutiveZCsStepRelTol "10*128*eps"
@@ -244,7 +413,6 @@ Model {
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
 	  EnableMultiTasking	  off
-	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
 	  Solver		  "ode4"
 	  SolverName		  "ode4"
@@ -261,10 +429,11 @@ Model {
 	  SampleTimeConstraint	  "Unconstrained"
 	  InsertRTBMode		  "Whenever possible"
 	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  11
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Decimation		  "1"
@@ -305,7 +474,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  12
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    8
@@ -363,10 +532,11 @@ Model {
 	  OptimizeBlockOrder	  "off"
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  13
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -405,6 +575,7 @@ Model {
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
 	  SigSpecEnsureSampleTimeMsg "warning"
 	  CheckMatrixSingularityMsg "none"
 	  IntegerOverflowMsg	  "warning"
@@ -446,6 +617,7 @@ Model {
 	  StateNameClashWarn	  "none"
 	  SimStateInterfaceChecksumMismatchMsg "warning"
 	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -472,11 +644,14 @@ Model {
 	  AllowedUnitSystems	  "all"
 	  UnitsInconsistencyMsg	  "warning"
 	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  14
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  ProdBitPerChar	  8
@@ -524,7 +699,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  15
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
@@ -543,7 +718,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  16
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  SimCustomSourceCode	  ""
@@ -573,7 +748,7 @@ Model {
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  17
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    13
@@ -621,6 +796,7 @@ Model {
 	  CustomLibrary		  ""
 	  CustomDefine		  ""
 	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
 	  CustomTerminator	  ""
 	  Toolchain		  "Automatically locate an installed toolchain"
@@ -656,7 +832,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      18
-	      Version		      "1.17.0"
+	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
 		Dimension		27
@@ -696,18 +872,16 @@ Model {
 	      CommentStyle	      "Auto"
 	      IgnoreCustomStorageClasses on
 	      IgnoreTestpoints	      off
-	      IncHierarchyInIds	      off
 	      MaxIdLength	      31
 	      PreserveName	      off
 	      PreserveNameWithParent  off
 	      ShowEliminatedStatement off
 	      OperatorAnnotations     off
-	      IncAutoGenComments      off
 	      SimulinkDataObjDesc     off
 	      SFDataObjDesc	      off
 	      MATLABFcnDesc	      off
-	      IncDataTypeInIds	      off
 	      MangleLength	      1
+	      SharedChecksumLength    8
 	      CustomSymbolStrGlobalVar "$R$N$M"
 	      CustomSymbolStrType     "$N$R$M_T"
 	      CustomSymbolStrField    "$N$M"
@@ -731,6 +905,7 @@ Model {
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
+	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
 	      InternalIdentifierFile  ""
@@ -743,7 +918,7 @@ Model {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      19
-	      Version		      "1.17.0"
+	      Version		      "1.17.1"
 	      Array {
 		Type			"Cell"
 		Dimension		15
@@ -788,7 +963,6 @@ Model {
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
 	      SuppressErrorStatus     off
-	      ERTFirstTimeCompliant   off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
 	      SupportAbsoluteTime     on
@@ -818,6 +992,9 @@ Model {
 	      CoderGroups	      []
 	      AccessMethods	      []
 	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -839,7 +1016,7 @@ Model {
 	}
 	SlCovCC.ConfigComp {
 	  $ObjectID		  20
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -879,7 +1056,7 @@ Model {
 	}
 	hdlcoderui.hdlcc {
 	  $ObjectID		  21
-	  Version		  "1.17.0"
+	  Version		  "1.17.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
@@ -905,6 +1082,11 @@ Model {
 	  EditingMode		  "Full"
 	  ExplicitSolverDiagnosticOptions "warning"
 	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeNormalizeSystem off
+	  SimscapeNominalValues	  "[{\"value\":\"1\",\"unit\":\"A\"},{\"value\":\"1\",\"unit\":\"bar\"},{\"value\":\"1\",\"un"
+	  "it\":\"cm^2\"},{\"value\":\"1\",\"unit\":\"cm^3/s\"},{\"value\":\"1\",\"unit\":\"kJ/kg\"},{\"value\":\"1\",\"unit\""
+	  ":\"kW\"},{\"value\":\"1\",\"unit\":\"l\"},{\"value\":\"1\",\"unit\":\"N\"},{\"value\":\"1\",\"unit\":\"N*m\"},{\"va"
+	  "lue\":\"1\",\"unit\":\"V\"}]"
 	  SimscapeLogType	  "none"
 	  SimscapeLogSimulationStatistics off
 	  SimscapeLogOpenViewer	  off
@@ -912,6 +1094,8 @@ Model {
 	  SimscapeLogDecimation	  1
 	  SimscapeLogLimitData	  on
 	  SimscapeLogDataHistory  5000
+	  SimscapeUseOperatingPoints off
+	  SimscapeOperatingPoint  ""
 	  SelectedTab		  ""
 	}
 	PropName		"Components"
@@ -962,7 +1146,12 @@ Model {
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
+    MarkupType		    "model"
     UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
   }
   LineDefaults {
     FontName		    "Helvetica"
@@ -1113,6 +1302,9 @@ Model {
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
       MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected off
     }
     Block {
       BlockType		      PMIOPort
@@ -1180,10 +1372,12 @@ Model {
       MaskHideContents	      off
       SFBlockType	      "NONE"
       GeneratePreprocessorConditionals off
+      AllowZeroVariantControls off
       PropagateVariantConditions off
       TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
+      IsObserver	      off
     }
     Block {
       BlockType		      Sum
@@ -1204,8 +1398,8 @@ Model {
   }
   System {
     Name		    "ug"
-    Location		    [-8, -8, 1374, 736]
-    Open		    on
+    Location		    [0, 23, 1366, 728]
+    Open		    off
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1244,7 +1438,7 @@ Model {
       Position		      [230, 800, 270, 840]
       ZOrder		      6059
       NamePlacement	      "alternate"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       FontName		      "Arial"
       FontSize		      12
       SourceBlock	      "powerlib/Elements/Series RLC Branch"
@@ -1271,7 +1465,7 @@ Model {
       Position		      [440, 885, 480, 925]
       ZOrder		      6042
       BlockRotation	      270
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       FontName		      "Arial"
       FontSize		      12
       SourceBlock	      "powerlib/Elements/Series RLC Branch"
@@ -1402,7 +1596,7 @@ Model {
 	  Ports			  [1, 1]
 	  Position		  [215, 22, 255, 58]
 	  ZOrder		  6089
-	  LibraryVersion	  "1.391"
+	  LibraryVersion	  "1.401"
 	  SourceBlock		  "simulink/Continuous/PID Controller"
 	  SourceType		  "PID 1dof"
 	  SourceProductName	  "Simulink"
@@ -1521,6 +1715,28 @@ Model {
 	  DifferentiatorOutMax	  "[]"
 	  DifferentiatorOutDataTypeStr "Inherit: Inherit via internal rule"
 	  InitialConditionSetting "State (most efficient)"
+	  FilterDiffNumProductOutputDataTypeStr	"Inherit: Inherit via internal rule"
+	  FilterDiffDenProductOutputDataTypeStr	"Inherit: Inherit via internal rule"
+	  FilterDiffNumAccumDataTypeStr	"Inherit: Inherit via internal rule"
+	  FilterDiffDenAccumDataTypeStr	"Inherit: Inherit via internal rule"
+	  FilterDiffOutCoefMin	  "[]"
+	  FilterDiffOutCoefMax	  "[]"
+	  FilterDiffOutCoefDataTypeStr "Inherit: Inherit via internal rule"
+	  SumDenAccumDataTypeStr  "Inherit: Inherit via internal rule"
+	  SumDenOutMin		  "[]"
+	  SumDenOutMax		  "[]"
+	  SumDenOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SumNumAccumDataTypeStr  "Inherit: Inherit via internal rule"
+	  SumNumOutMin		  "[]"
+	  SumNumOutMax		  "[]"
+	  SumNumOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  ReciprocalOutMin	  "[]"
+	  ReciprocalOutMax	  "[]"
+	  ReciprocalOutDataTypeStr "Inherit: Inherit via internal rule"
+	  DivideOutMin		  "[]"
+	  DivideOutMax		  "[]"
+	  DivideOutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  TunerSelectOption	  "Transfer Function Based (PID Tuner App)"
 	}
 	Block {
 	  BlockType		  Reference
@@ -1529,7 +1745,7 @@ Model {
 	  Ports			  [1, 1]
 	  Position		  [605, 31, 655, 69]
 	  ZOrder		  6098
-	  LibraryVersion	  "1.91"
+	  LibraryVersion	  "1.107"
 	  FontName		  "Arial"
 	  SourceBlock		  "powerlib_meascontrol/Pulse & Signal\nGenerators/PWM Generator\n(2-Level)"
 	  SourceType		  "PWM Generator (2-Level)"
@@ -1738,7 +1954,7 @@ Model {
       Position		      [-245, 843, -220, 867]
       ZOrder		      6115
       ShowName		      off
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       UserDataPersistent      on
       SourceBlock	      "powerlib/Measurements/Current Measurement"
       SourceType	      "Current Measurement"
@@ -1756,7 +1972,7 @@ Model {
       Ports		      [0, 1, 0, 0, 0, 1, 1]
       Position		      [530, 808, 555, 832]
       ZOrder		      6149
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       UserDataPersistent      on
       SourceBlock	      "powerlib/Measurements/Current Measurement"
       SourceType	      "Current Measurement"
@@ -1776,7 +1992,7 @@ Model {
       ZOrder		      6045
       BlockRotation	      90
       NamePlacement	      "alternate"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       FontName		      "Arial"
       FontSize		      12
       SourceBlock	      "powerlib/Power\nElectronics/Diode"
@@ -1822,7 +2038,7 @@ Model {
       "0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0."
       "0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),'DisplayLayoutDimensions',[2 1],'DisplayContentCac"
       "he',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomX'),extmg"
-      "r.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a','Position',[1 41 1366 651],'Op"
+      "r.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Position',[1 41 1366 651],'Op"
       "enAtMdlStart',true)"
       NumInputPorts	      "2"
     }
@@ -1915,7 +2131,7 @@ Model {
       Ports		      [0, 1]
       Position		      [-590, 856, -550, 894]
       ZOrder		      6104
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -1975,7 +2191,7 @@ Model {
       Position		      [55, 806, 125, 834]
       ZOrder		      6055
       NamePlacement	      "alternate"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       FontName		      "Arial"
       FontSize		      12
       SourceBlock	      "powerlib/Elements/Series RLC Branch"
@@ -2003,7 +2219,7 @@ Model {
       ZOrder		      6060
       BlockMirror	      on
       NamePlacement	      "alternate"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       FontName		      "Arial"
       FontSize		      12
       SourceBlock	      "powerlib/Elements/Series RLC Branch"
@@ -2030,7 +2246,7 @@ Model {
       Position		      [200, 1053, 230, 1077]
       ZOrder		      6061
       ShowName		      off
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -2060,7 +2276,7 @@ Model {
       Position		      [200, 1083, 230, 1107]
       ZOrder		      6063
       ShowName		      off
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -2099,15 +2315,20 @@ Model {
       "0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
       ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392"
       "15686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Num"
-      "Lines',2,'LineNames',{{'Vout','Current Measurement1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaul"
-      "ts',struct('MinYLimReal','-43.06578','MaxYLimReal','387.59203','YLabelReal','','MinYLimMag','0.00000','MaxYLimMa"
-      "g','387.59203','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
-      "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.6235294117"
-      "64706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3921"
-      "56862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])"
-      "),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomX','PreviousAut"
-      "oscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a','Position',"
-      "[1 41 1366 651])"
+      "Lines',1,'LineNames',{{'Vout'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-25.6306','MaxYLimReal',"
+      "'10.01433','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','387.59203','LegendVisibility','Off','XGrid',true"
+      ",'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.68"
+      "6274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0"
+      ".16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0"
+      "588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},"
+      "'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Current Measurement1'}},'ShowContent',true,'Placement"
+      "',2)},'DisplayPropertyDefaults',struct('YLabelReal','','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotM"
+      "agPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'Colo"
+      "rOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.71"
+      "7647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;"
+      "1 0.0745098039215686 0.650980392156863]),'DisplayLayoutDimensions',[2 1]),extmgr.Configuration('Tools','Plot Nav"
+      "igation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomX','PreviousAutoscale','XY'),extmgr.Configuration('Tool"
+      "s','Measurements',true,'Version','2017b')),'Version','2017b','Position',[1 41 1366 651])"
       NumInputPorts	      "2"
     }
     Block {
@@ -2122,8 +2343,8 @@ Model {
       Variant		      off
       System {
 	Name			"PMBLDCM"
-	Location		[-8, -8, 1374, 736]
-	Open			off
+	Location		[0, 23, 1366, 728]
+	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -2678,8 +2899,6 @@ Model {
 	      Name		      "/ha"
 	      Position		      [183, 28, 198, 42]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -1
@@ -2689,8 +2908,6 @@ Model {
 	      Name		      "ha"
 	      Position		      [184, 91, 197, 105]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -2
@@ -2700,8 +2917,6 @@ Model {
 	      Name		      "ha"
 	      Position		      [342, 92, 355, 106]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -3
@@ -2711,8 +2926,6 @@ Model {
 	      Name		      "/hb"
 	      Position		      [341, 120, 356, 134]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -4
@@ -2722,8 +2935,6 @@ Model {
 	      Name		      "hb"
 	      Position		      [342, 157, 355, 171]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -5
@@ -2733,8 +2944,6 @@ Model {
 	      Name		      "/hc"
 	      Position		      [335, 184, 350, 198]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -6
@@ -2744,8 +2953,6 @@ Model {
 	      Name		      "hc"
 	      Position		      [340, 224, 352, 238]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -7
@@ -2755,8 +2962,6 @@ Model {
 	      Name		      "/ha"
 	      Position		      [336, 252, 351, 266]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -8
@@ -2766,8 +2971,6 @@ Model {
 	      Name		      "/ha"
 	      Position		      [337, 292, 352, 306]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -9
@@ -2777,8 +2980,6 @@ Model {
 	      Name		      "hb"
 	      Position		      [329, 324, 342, 338]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -10
@@ -2788,8 +2989,6 @@ Model {
 	      Name		      "/hb"
 	      Position		      [334, 374, 349, 388]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -11
@@ -2799,8 +2998,6 @@ Model {
 	      Name		      "hc"
 	      Position		      [328, 400, 340, 414]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -12
@@ -2810,8 +3007,6 @@ Model {
 	      Name		      "/hc"
 	      Position		      [337, 442, 352, 456]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -13
@@ -2821,8 +3016,6 @@ Model {
 	      Name		      "ha"
 	      Position		      [329, 469, 342, 483]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -14
@@ -2838,8 +3031,6 @@ Model {
 	      "    +1               -1\n1          1         1          0               0                0\n "
 	      Position		      [607, 364, 887, 522]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -15
@@ -2889,7 +3080,7 @@ Model {
 	      Position		      [275, 59, 320, 81]
 	      ZOrder		      -2
 	      ShowName		      off
-	      LibraryVersion	      "1.391"
+	      LibraryVersion	      "1.401"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -2907,7 +3098,7 @@ Model {
 	      Position		      [275, 99, 320, 121]
 	      ZOrder		      -3
 	      ShowName		      off
-	      LibraryVersion	      "1.391"
+	      LibraryVersion	      "1.401"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -2925,7 +3116,7 @@ Model {
 	      Position		      [275, 139, 320, 161]
 	      ZOrder		      -4
 	      ShowName		      off
-	      LibraryVersion	      "1.391"
+	      LibraryVersion	      "1.401"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -2943,7 +3134,7 @@ Model {
 	      Position		      [275, 179, 320, 201]
 	      ZOrder		      -5
 	      ShowName		      off
-	      LibraryVersion	      "1.391"
+	      LibraryVersion	      "1.401"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -2961,7 +3152,7 @@ Model {
 	      Position		      [270, 219, 315, 241]
 	      ZOrder		      -6
 	      ShowName		      off
-	      LibraryVersion	      "1.391"
+	      LibraryVersion	      "1.401"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -2979,7 +3170,7 @@ Model {
 	      Position		      [270, 259, 315, 281]
 	      ZOrder		      -7
 	      ShowName		      off
-	      LibraryVersion	      "1.391"
+	      LibraryVersion	      "1.401"
 	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
 	      SourceType	      "Compare To Zero"
 	      SourceProductName	      "Simulink"
@@ -3147,8 +3338,6 @@ Model {
 	      "  1\n    0              0                0             0          0          0           0        0        0\n "
 	      Position		      [381, 239, 774, 397]
 	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
 	      HorizontalAlignment     "center"
 	      VerticalAlignment	      "middle"
 	      ZOrder		      -1
@@ -3182,7 +3371,7 @@ Model {
 	  "69 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Rotor speed (rpm)','LinePropertiesCach"
 	  "e',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Co"
 	  "nfiguration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools"
-	  "','Measurements',true,'Version','2017a')),'Version','2017a','Location',[1 76 1367 727])"
+	  "','Measurements',true,'Version','2017b')),'Version','2017b','Location',[1 76 1367 727])"
 	  NumInputPorts		  "1"
 	}
 	Block {
@@ -3192,7 +3381,7 @@ Model {
 	  Ports			  [1, 1, 0, 0, 0, 3]
 	  Position		  [1145, 293, 1230, 367]
 	  ZOrder		  6008
-	  LibraryVersion	  "1.2760"
+	  LibraryVersion	  "1.2778"
 	  FontSize		  11
 	  SourceBlock		  "powerlib/Machines/Permanent Magnet\nSynchronous Machine"
 	  SourceType		  "Permanent Magnet Synchronous Machine"
@@ -3245,21 +3434,21 @@ Model {
 	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
 	  "','WiredSimulink',true,'DataLogging',true,'DataLoggingVariableName','ScopeData2','DataLoggingSaveFormat','Structure"
 	  "WithTime','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time Domain',"
-	  "true,'SerializedDisplays',{struct('MinYLimReal','-8.73338','MaxYLimReal','22.83449','YLabelReal','','MinYLimMag','0"
-	  ".00000','MaxYLimMag','22.83449','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor'"
+	  "true,'SerializedDisplays',{struct('MinYLimReal','-1.76715','MaxYLimReal','12.18618','YLabelReal','','MinYLimMag','0"
+	  ".00000','MaxYLimMag','12.18618','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor'"
 	  ",[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666666666"
 	  "67;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 "
 	  "0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156"
 	  "863],'Title','Electromagnetic Torque (Nm)','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'"
 	  "LineNames',{{'<Electromagnetic torque Te (N*m)>'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',str"
-	  "uct('MinYLimReal','-8.73338','MaxYLimReal','22.83449','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','22.83449"
+	  "uct('MinYLimReal','-1.76715','MaxYLimReal','12.18618','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','12.18618"
 	  "','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68"
 	  "6274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529"
 	  "411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058"
 	  "823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Electromagnetic "
 	  "Torque (Nm)','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent"
 	  "',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','Z"
-	  "oomX'),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a','Location',[1 76 1367"
+	  "oomX'),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b','Location',[1 76 1367"
 	  " 727])"
 	  NumInputPorts		  "1"
 	}
@@ -3272,7 +3461,7 @@ Model {
 	  ZOrder		  6005
 	  BlockMirror		  on
 	  ShowName		  off
-	  LibraryVersion	  "1.2760"
+	  LibraryVersion	  "1.2778"
 	  SourceBlock		  "powerlib/Power\nElectronics/Universal Bridge"
 	  SourceType		  "Universal Bridge"
 	  SourceProductName	  "Simscape Power Systems"
@@ -3329,7 +3518,7 @@ Model {
 	  Position		  [1040, 388, 1065, 412]
 	  ZOrder		  6002
 	  ShowName		  off
-	  LibraryVersion	  "1.2760"
+	  LibraryVersion	  "1.2778"
 	  SourceBlock		  "powerlib/Measurements/Voltage Measurement"
 	  SourceType		  "Voltage Measurement"
 	  SourceProductName	  "Simscape Power Systems"
@@ -3716,7 +3905,7 @@ Model {
       BlockRotation	      270
       BlockMirror	      on
       NamePlacement	      "alternate"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       FontName		      "Arial"
       FontSize		      12
       SourceBlock	      "powerlib/Power\nElectronics/Mosfet"
@@ -3804,34 +3993,34 @@ Model {
       BackgroundColor	      "[1.000000, 0.000000, 0.000000]"
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLoggingVariableName','current','DataLogging',true),extmgr.Configuration('Visua"
-      "ls','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-406.25','MaxYLimReal','406.25','YLabelReal',"
-      "'','MinYLimMag',' 0.00000','MaxYLimMag','406.25','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhas"
-      "e',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder"
-      "',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686"
-      "2745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07"
-      "45098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 0.0666666"
-      "666666667],'LineStyle','-','LineWidth',2,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLi"
-      "nes',1,'LineNames',{{'Vs'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-22.75627','MaxYLimReal','30"
-      ".80541','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid',true,'P"
-      "lotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'"
-      "ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;"
-      "0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 "
-      "1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1"
-      " 0.0666666666666667],'LineStyle','-','LineWidth',2,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{"
-      "{}},'NumLines',1,'LineNames',{{'Is'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-1.00000','MaxYLim"
-      "Real','1.00000','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid'"
-      ",true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745098"
-      "03922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607843"
-      "1372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823529"
-      "4117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDef"
-      "inedChannelNames',{{}},'NumLines',1,'LineNames',{{'pf'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefa"
-      "ults',struct('YLabelReal','','AxesColor',[0 0 0],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764"
-      "705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.8313"
-      "72549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),'DisplayLayoutDim"
-      "ensions',[3 1],'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,"
-      "'PreviousZoomMode','ZoomX'),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017"
-      "a','Position',[1 41 1366 651])"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','Source','DataLogging',true),extmgr.Configuration('Visual"
+      "s','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-406.25','MaxYLimReal','406.25','YLabelReal','"
+      "','MinYLimMag',' 0.00000','MaxYLimMag','406.25','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase"
+      "',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder'"
+      ",[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862"
+      "745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074"
+      "5098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 0.06666666"
+      "66666667],'LineStyle','-','LineWidth',2,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLin"
+      "es',1,'LineNames',{{'Vs'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-22.75627','MaxYLimReal','30."
+      "80541','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid',true,'Pl"
+      "otMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'C"
+      "olorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0"
+      ".392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1"
+      " 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 "
+      "0.0666666666666667],'LineStyle','-','LineWidth',2,'Marker','none','Visible','on')}},'UserDefinedChannelNames',{{"
+      "}},'NumLines',1,'LineNames',{{'Is'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-1.00000','MaxYLimR"
+      "eal','1.00000','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid',"
+      "true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.68627450980"
+      "3922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431"
+      "372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294"
+      "117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefi"
+      "nedChannelNames',{{}},'NumLines',1,'LineNames',{{'pf'}},'ShowContent',true,'Placement',3)},'DisplayPropertyDefau"
+      "lts',struct('YLabelReal','','AxesColor',[0 0 0],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.4117647"
+      "05882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),'DisplayLayoutDime"
+      "nsions',[3 1],'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'"
+      "PreviousZoomMode','ZoomX'),extmgr.Configuration('Tools','Measurements',true,'Version','2017b')),'Version','2017b"
+      "','Position',[1 41 1366 651])"
       NumInputPorts	      "3"
     }
     Block {
@@ -3841,7 +4030,7 @@ Model {
       Ports		      [0, 0, 0, 0, 0, 2, 2]
       Position		      [-125, 819, -25, 986]
       ZOrder		      6085
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Power\nElectronics/Universal Bridge"
       SourceType	      "Universal Bridge"
       SourceProductName	      "Simscape Power Systems"
@@ -3868,7 +4057,7 @@ Model {
       Ports		      [0, 1]
       Position		      [430, 698, 460, 722]
       ZOrder		      6105
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -3902,7 +4091,7 @@ Model {
       Position		      [-335, 880, -295, 930]
       ZOrder		      6080
       BlockRotation	      270
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Electrical\nSources/AC Voltage Source"
       SourceType	      "AC Voltage Source"
       SourceProductName	      "Simscape Power Systems"
@@ -3926,7 +4115,7 @@ Model {
       Ports		      [0, 1]
       Position		      [-590, 751, -550, 789]
       ZOrder		      6126
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -3959,7 +4148,7 @@ Model {
       Ports		      [0, 1]
       Position		      [-370, 1028, -345, 1052]
       ZOrder		      6120
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -3989,7 +4178,7 @@ Model {
       Position		      [-555, 1078, -530, 1102]
       ZOrder		      6139
       Commented		      "on"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "1.2778"
       SourceBlock	      "powerlib/Measurements/Multimeter"
       SourceType	      "MultimeterPSB"
       SourceProductName	      "Simscape Power Systems"
@@ -4019,7 +4208,7 @@ Model {
       Position		      [-450, 560, -369, 599]
       ZOrder		      5897
       Priority		      "1"
-      LibraryVersion	      "1.2760"
+      LibraryVersion	      "*1.2778"
       SourceBlock	      "powerlib/powergui"
       SourceType	      "PSB option menu block"
       SourceProductName	      "Simscape Power Systems"
@@ -4061,7 +4250,7 @@ Model {
       save		      off
       variable		      "ZData"
       structure		      "current"
-      ZoomFFT		      on
+      ZoomFFT		      off
       StartTime		      "0.5"
       cycles		      "20"
       DisplayStyle	      "1"
